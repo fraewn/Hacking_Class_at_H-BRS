@@ -6,6 +6,7 @@ import requests
 # make a normal get request without anything and save status code and content type
 r = requests.get('https://api.github.com/events')
 statuscode = r.status_code
+allheaders = r.headers
 contenttype = r.headers['content-type']
 text = r.text
 # make text look nicer with json decoder
@@ -20,10 +21,15 @@ search_with_params = requests.get('https://www.google.com/search?', params=searc
 headers = {'user-agent': 'firefox'}
 request_with_header = requests.get('https://www.github.com', headers=headers)
 
+# access cookies
+
+
+
 # get test functions
 print('GET REQUEST TESTS')
 print('test get request: ')
 print(statuscode)
+print(allheaders)
 print(contenttype)
 print(encoding)
 print(text)
@@ -38,14 +44,30 @@ print(request_with_header.status_code)
 # important to not forget the /post part in the url
 url = 'https://httpbin.org/post'
 
-# create some content
+# create some basic content
 content =  {'name': 'elena', 'beruf': 'Anglerin'}
-
 # make post request to url, put content in data parameter
 post_request = requests.post(url, data=content)
+
+# create advance content with several values under the same key
+#{
+#  ...
+#  "form": {
+#   "key1": [
+#     "value1",
+#     "value2"
+#    ]
+#  },
+#  ...
+#}
+advanced_content = [('name', 'elena'), ('name', 'sophia')]
+advanced_post_request = requests.post(url, data=advanced_content)
 
 # print
 print('\n\nPOST REQUEST TESTS')
 print('test simple post request with some content:')
 print(post_request.status_code)
-print(post_request.text)
+print(post_request.json())
+print('\ntest advanced post request with proper content:')
+print(advanced_post_request.status_code)
+print(advanced_post_request.json())
