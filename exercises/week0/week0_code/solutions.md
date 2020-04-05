@@ -60,6 +60,16 @@ Url to exercises: https://hack.redrocket.club/course/OS-Week0/problems/
 * set encoded admin word as user cookie using curl -b 
 * flag is found in the body 
 
+### Exercise Session two
+* James starts at 0
+* James start at -1219
+* Alonso ends at 1219
+* Alsonso ends at -1 
+* so we have 1219 numbers from -1219 to -1
+* and 1219 numbers from 1 to 1219
+* write a script to try out all session_ids
+* look for each session_id in the text for "flag{"  
+
 
 
 
