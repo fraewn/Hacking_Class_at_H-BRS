@@ -1,5 +1,6 @@
 import requests
 
+# trying out the python requests lib
 # see https://requests.readthedocs.io/en/master/user/quickstart/
 
 # GET
@@ -20,10 +21,6 @@ search_with_params = requests.get('https://www.google.com/search?', params=searc
 # make url request with specified header that we send to server
 headers = {'user-agent': 'firefox'}
 request_with_header = requests.get('https://www.github.com', headers=headers)
-
-# access cookies
-
-
 
 # get test functions
 print('GET REQUEST TESTS')
