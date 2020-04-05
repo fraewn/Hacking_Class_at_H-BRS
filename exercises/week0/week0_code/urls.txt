@@ -1,0 +1,15 @@
+exercise 1: http://vuln.redrocket.club:8002/?
+
+exercise 2: http://vuln.redrocket.club:8000/?
+
+exercise 3: http://vuln.redrocket.club:8888/?
+exercise 3 file: http://redrocket.club/exercise3_script.js
+
+exercise 4 normal link: http://hack.hctf.fun:37366
+exercise 4 link to admin.php: http://hack.hctf.fun:37366/admin.php
+
+exercise 5 normal link: http://vuln.redrocket.club:8004
+exercise 5: http://vuln.redrocket.club:8004/docs/document_"
+
+exercise 6: http://vuln.redrocket.club:4444/?
+
