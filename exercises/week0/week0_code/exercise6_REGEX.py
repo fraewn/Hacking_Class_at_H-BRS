@@ -1,8 +1,9 @@
 import requests
 
 # quick script to check if the content contains a flag for many userids
+# this did not solve the hack!
 
-url = "url exercise 6"
+url = "http://vuln.redrocket.club:4444/?"
 flag = "no flag found"
 
 for i in range(1,1000):

@@ -1,0 +1,1 @@
+curl "http://vuln.redrocket.club:8002/flag.txt" -v

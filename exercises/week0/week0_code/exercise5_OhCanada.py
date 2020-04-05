@@ -8,6 +8,7 @@ from pdfminer.pdfpage import PDFPage
 from pdfminer.pdfparser import PDFParser
 
 # script to iterate through many urls (leading to pdfs) that only change at the end
+# web application: http://vuln.redrocket.club:8004
 
 # array to save working urls
 a = []
@@ -15,7 +16,7 @@ flag = "no flag yet";
 
 # create and execute all get requests
 for i in range(1,301):
-    url = "url to exercise 5"
+    url = "http://vuln.redrocket.club:8004/docs/document_"
     # create url ending
     if (i > 99):
         url = url + str(i) + ".pdf"

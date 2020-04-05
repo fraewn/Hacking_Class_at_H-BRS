@@ -1,6 +1,17 @@
 # How I caught this week's flags
 
 Url to exercises: https://hack.redrocket.club/course/OS-Week0/problems/
+* exercise1_GPUPOWER: http://vuln.redrocket.club:8002/?
+* exercise2_Hashed: http://vuln.redrocket.club:8000/?
+* exercise3_JSS: http://vuln.redrocket.club:8888/?
+* exercise3_JSS-file: http://redrocket.club/exercise3_JSS.js
+* exercise4_NiceCMS-normal_link: http://hack.hctf.fun:37366
+* exercise4_NiceCMS-link_to_admin.php: http://hack.hctf.fun:37366/admin.php
+* exercise5_OhCanada-normal_link: http://vuln.redrocket.club:8004
+* exercise5_OhCanada-modified_link: http://vuln.redrocket.club:8004/docs/document_"
+* exercise6_REGEX: http://vuln.redrocket.club:4444/?
+* exercise8_SessionOne: http://vuln.redrocket.club:1920/
+* exercise9_SessionTwo: http://vuln.redrocket.club:1921/
 
 ### Exercise 1 GPUPOWER
 * The flag was in a file flag.txt

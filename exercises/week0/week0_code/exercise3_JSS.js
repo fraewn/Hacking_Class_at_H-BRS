@@ -1,6 +1,10 @@
 // java script code for exercise 3
 // the generated pw was static so you just needed to make it visible via console.log and then enter it
 
+//  execute with "node exercise3_JSS.js"
+// listening on localhost:8888
+// password is printed to console
+
 // services we use, made accessable via variables
 var http = require('http');
 const crypto = require('crypto');

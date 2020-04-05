@@ -1,5 +1,8 @@
 import requests
 
+# this script solves the exercise
+# it tries all session_ids to find the admin session_id
+
 url = "http://vuln.redrocket.club:1921/"
 flag = "no flag found"
 
