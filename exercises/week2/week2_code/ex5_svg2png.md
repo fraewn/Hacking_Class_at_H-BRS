@@ -30,4 +30,3 @@ genommen wurde. Sehr strange, aber gut zu wissen. Linux Firefox Browser
 
 Der Inhalt der file wurde dann als png angezeigt und konnte abgelesen werden: 
 flag{https://www.youtube.com/watch?v=e5nyQmaq4k4#N1c3_W0rk!}
- 
