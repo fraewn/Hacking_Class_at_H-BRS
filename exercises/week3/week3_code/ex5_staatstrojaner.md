@@ -14,7 +14,7 @@
 key: `4903930819949694289383046828A8F50AB994024581931FBCD7F3AD93F53293` (bytes)
 "screenshot begins header": `16 26 80 7c ff ff ff ff 00 26 80 7c 42 25 80 7c` (hex)
 
-#### Stragie 
+#### Strategie 
 * flag ist wahrsch in so einem Bild 
 * d.h. man muss
 1. Packages dursuchen nach dem "screenshot begins header"
