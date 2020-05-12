@@ -3,5 +3,6 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
     <mapping directory="$PROJECT_DIR$/week3/padding_oracle_tool/padding-oracle" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/week5/eccfun" vcs="Git" />
   </component>
 </project>
