@@ -1,0 +1,17 @@
+A2
+relocoverwrite [50 points]
+Relocoverwrite. Overwrite some GOT entry and get a shell.
+Flag in /. Use a libc database to identify the server's libc.
+https://libcdb.konwur.de/
+
+nc vuln.redrocket.club 4546
+
+
+
+A1 
+bytearray [150 points]
+A real pwning task. A libc database (libcdb.konwur.de) might be useful, a one gadget is necessary! Flag in /.
+download tasks
+nc vuln.redrocket.club 4545
+
+- Solved 0 times -

