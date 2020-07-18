@@ -22,6 +22,6 @@ ofile = open("output.txt", "w")
 # der ciphertext in hex
 print(c.hex(), file=ofile)
 # the modulus
-# also hab ich den modulus gegeben
+# also hab ich den modulus (RSAKey) gegeben
 print(r.n, file=ofile)
 

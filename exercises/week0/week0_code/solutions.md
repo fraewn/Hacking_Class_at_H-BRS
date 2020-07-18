@@ -22,7 +22,7 @@ Url to exercises: https://hack.redrocket.club/course/OS-Week0/problems/
 * there is a vulnerability when using md5 hashes for passwords
 * if you are looking for a pw stating with "0e..." (only numbers following) 
 * and you are using php == to compare your pw to the input
-* then you need to be aware of this: https://www.owasp.org/images/6/6b/PHPMagicTricks-TypeJuggling.pdf
+* then you need to be aware of this: https://owasp.org/www-pdf-archive/PHPMagicTricks-TypeJuggling.pdf
 
 ### Exercise 3 JSS
 * you were given some jss-code 

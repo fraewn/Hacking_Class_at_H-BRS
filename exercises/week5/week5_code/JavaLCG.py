@@ -43,6 +43,7 @@ for i in range(2**17):
 
 	prn1_shifted = prn1 << 17 | i
 	predicted_pseudonumber = (lcg.a * prn1_shifted + lcg.c) & lcg.m
+
 	if(prn2 == ((predicted_pseudonumber >> 48 - 31) & ((1 << 31) - 1))):
 		print(predicted_pseudonumber)
 		break

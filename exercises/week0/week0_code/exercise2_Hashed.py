@@ -3,7 +3,7 @@ import requests
 #
 
 # helpful1: https://www.whitehatsec.com/blog/magic-hashes/
-# helpful2: https://www.owasp.org/images/6/6b/PHPMagicTricks-TypeJuggling.pdf
+# helpful2: https://owasp.org/www-pdf-archive/PHPMagicTricks-TypeJuggling.pdf
 # in php's lose coupling comparison, data starting with 0e means that if the following characters are all digits the whole string gets treated as a float.
 # to catch the flag, we need to find a word which is md5ed to a hash starting with 0e
 
